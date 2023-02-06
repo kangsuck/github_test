@@ -19,7 +19,7 @@ public class Main {
 //        );
 
 
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfigurer.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppCon.class);
 
         ProductRepository productRepository = applicationContext.getBean("productRepository", ProductRepository.class);
         Menu menu = applicationContext.getBean("menu", Menu.class);

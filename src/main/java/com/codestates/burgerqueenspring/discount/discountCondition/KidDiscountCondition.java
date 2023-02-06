@@ -4,7 +4,6 @@ import com.codestates.burgerqueenspring.discount.discountPolicy.DiscountPolicy;
 
 import java.util.Scanner;
 
-//@Component
 public class KidDiscountCondition implements DiscountCondition {
     private boolean isSatisfied;
     private DiscountPolicy discountPolicy;

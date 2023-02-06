@@ -6,7 +6,6 @@ import com.codestates.burgerqueenspring.discount.discountCondition.KidDiscountCo
 import com.codestates.burgerqueenspring.discount.discountPolicy.FixedAmountDiscountPolicy;
 import com.codestates.burgerqueenspring.discount.discountPolicy.FixedRateDiscountPolicy;
 
-
 public class Discount {
     private DiscountCondition[] discountConditions;
 
