@@ -6,6 +6,8 @@ import com.codestates.burgerqueenspring.product.ProductRepository;
 
 public class AppConfigurer {
 
+    private Cart cart = new Cart(productRepository(), menu());
+
     public Menu menu() {
         return new Menu(productRepository());
     }
@@ -15,7 +17,7 @@ public class AppConfigurer {
     }
 
     public Cart cart() {
-        return new Cart(productRepository(), menu());
+        return cart;
     }
 
     public Order order() {
