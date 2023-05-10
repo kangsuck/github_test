@@ -8,7 +8,6 @@ public class Order {
     private Cart cart;
     private Discount discount;
 
-    @Autowired
     public Order(Cart cart, Discount discount) {
         this.cart = cart;
         this.discount = discount;

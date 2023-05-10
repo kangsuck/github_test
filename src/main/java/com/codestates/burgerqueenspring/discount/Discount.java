@@ -7,15 +7,15 @@ import com.codestates.burgerqueenspring.discount.discountPolicy.FixedAmountDisco
 import com.codestates.burgerqueenspring.discount.discountPolicy.FixedRateDiscountPolicy;
 
 public class Discount {
+
     private DiscountCondition[] discountConditions;
 
-    public Discount() {
-        this.discountConditions = new DiscountCondition[]{
-                new CozDiscountCondition(new FixedRateDiscountPolicy()),
-                new KidDiscountCondition(new FixedAmountDiscountPolicy())
-        };
+    public Discount(DiscountCondition[] discountConditions) {
+        this.discountConditions = discountConditions;
     }
 
+    public Discount() {
+    }
 
     public void checkAllDiscountConditions() {
         for (DiscountCondition discountCondition : discountConditions) {
